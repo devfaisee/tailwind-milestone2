@@ -4,6 +4,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../styles/home.css";
+import Image from "next/image";
 
 const sliderData = [
   { image: "/maldives.jpg", place: "Maldives" },
@@ -25,7 +26,13 @@ export default function Home() {
       >
         {sliderData.map((slide, index) => (
           <SwiperSlide key={index} className="slide">
-            <img src={slide.image} alt={slide.place} className="slide-img" />
+            <Image
+              src={slide.image}
+              alt={slide.place}
+              className="slide-img"
+              width={500}
+              height={300}
+            />
             <div className="slide-text">{slide.place}</div>
           </SwiperSlide>
         ))}
