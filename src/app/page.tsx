@@ -39,7 +39,7 @@ export default function Home() {
       </Swiper>
 
       <h2>Explore Beautiful Destinations</h2>
-      <p>Discover the world's most stunning locations!</p>
+      <p>Discover the world most stunning locations!</p>
     </main>
   );
 }
