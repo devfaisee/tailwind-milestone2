@@ -5,13 +5,13 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../styles/home.css";
-import Image from "next/image";
+
 const sliderData = [
-  { img: "/maldives.jpg", place: "Maldives" },
-  { img: "/switzerland.jpg", place: "Switzerland" },
-  { img: "/tokyo.jpg", place: "Tokyo, Japan" },
-  { img: "/dubai.jpg", place: "Dubai, UAE" },
-  { img: "/paris.jpg", place: "Paris, France" },
+  { image: "/maldives.jpg", place: "Maldives" },
+  { image: "/switzerland.jpg", place: "Switzerland" },
+  { image: "/tokyo.jpg", place: "Tokyo, Japan" },
+  { image: "/dubai.jpg", place: "Dubai, UAE" },
+  { image: "/paris.jpg", place: "Paris, France" },
 ];
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
       >
         {sliderData.map((slide, index) => (
           <SwiperSlide key={index} className="slide">
-            <img src={slide.img} alt={slide.place} className="slide-img" />
+            <img src={slide.image} alt={slide.place} className="slide-img" />
             <div className="slide-text">{slide.place}</div>
           </SwiperSlide>
         ))}
