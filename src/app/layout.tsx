@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import Link from "next/link";
+import "../styles/navbar.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,7 +28,20 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="navbar">
+          <div className="nav-logo">Travel Explorer</div>
+          <div className="nav-links">
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/destinations">Destinations</Link>
+            <Link href="/contact">Contact</Link>
+          </div>
+        </nav>
+
         {children}
+        <footer className="footer">
+          <p>© 2025 Travel Explorer. All rights reserved.</p>
+        </footer>
       </body>
     </html>
   );

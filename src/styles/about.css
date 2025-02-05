@@ -1,0 +1,62 @@
+.about-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .about-container h1 {
+    text-align: center;
+    color: #004AAD;
+  }
+  .mission-vision {
+    margin-top: 30px;
+  }
+  .mission-vision h2 {
+    color: #FF6B00;
+    margin-top: 20px;
+  }
+  .team {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .team-member {
+    background: #F8F9FA;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .team-member img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .team-member h3 {
+    margin: 10px 0 5px;
+    color: #212529;
+  }
+  .team-member p {
+    color: #6C757D;
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      width: 90%;
+    }
+    .team-members {
+      flex-direction: column;
+      align-items: center;
+    }
+    .team-member {
+      width: 90%;
+    }
+  }
+  
