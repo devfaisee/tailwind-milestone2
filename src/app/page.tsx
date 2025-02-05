@@ -4,7 +4,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../styles/home.css";
-import Image from "next/image";
+import Image from "next/image"; // Importing the Next.js Image component
 
 const sliderData = [
   { image: "/maldives.jpg", place: "Maldives" },

@@ -1,4 +1,5 @@
 import "../../styles/destinations.css";
+import Image from "next/image"; // Importing the Next.js Image component
 
 const destinations = [
   {
@@ -40,7 +41,7 @@ export default function Destinations() {
       <div className="destinations-grid">
         {destinations.map((place, index) => (
           <div key={index} className="destination-card">
-            <img src={place.image} alt={place.name} className="destination-img" />
+            <Image src={place.image} alt={place.name} className="destination-img" width={300} height={200} />
             <h3>{place.name}</h3>
             <p>{place.desc}</p>
             <span className="price">{place.price}</span>
