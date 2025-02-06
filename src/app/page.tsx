@@ -40,8 +40,10 @@ export default function Home() {
       </Swiper>
 
       <h2 className="text-2xl font-bold text-[#004AAD] mb-4">Explore Beautiful Destinations</h2>
-      <p className="text-gray-600">Discover the world's most stunning locations!</p>
+      <p className="text-gray-600">Discover the world&apos;s most stunning locations!</p>
     </main>
+
+
   );
 }
 
